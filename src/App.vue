@@ -1,15 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div id="cesium-container">
+    <CesiumViewer />
+  </div>
+  <!-- <div id="cesiumContainer" class="fullSize"></div>
+  <div id="loadingOverlay"><h1>Loading...</h1></div>
+  <div id="toolbar"></div> -->
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import CesiumViewer from "./components/CesiumViewer.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    CesiumViewer,
   },
 };
 </script>
@@ -21,6 +25,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
